@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details_Blog</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="flex px-[10%] justify-between items-center py-2">
+        <img src="./img/Logo.png" alt="Logo">
+        <div class="hidden lg:flex gap-12 font-semibold">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html" class="font-bold text-[16px] border-b-2 pb-1 border-black">Contact Us &rarr;</a>
+        </div>
+        <img src="./img/Icon.png" alt="" class="lg:hidden w-[40px]">
+    </nav>
+    <header>
+        <h1 class="text-[30px] lg:text-[55px] ml-2 mt-10 font-bold lg:w-[50%] lg:m-auto">How we perform long-running tasks using
+            AWS <br> services</h1>
+    </header>
+    <main>
+        <div class="flex flex-col lg:flex-row justify-around ml-3 mt-20">
+            <div class="flex gap-5">
+                <img src="./img/Ellipse 15.png" alt="">
+                <div class="">
+                    <p class=" text-[20px] font-bold">Renee Wells</p>
+                    <p class="text-gray-500 text-[18px]">Product Designer, Quotient</p>
+                </div>
+            </div>
+            <div class="">
+                <span class="text-gray-500 text-start text-[18px] mt-5">10 min read November 10, 2023</span>
+            </div>
+        </div>
+        <img src="./img/Rectangle 44.png" alt="" class="m-auto py-10">
+        <p class="text-gray-500 m-auto lg:w-[60%] py-10 px-10">Depending on the input, this can result in using a lot of
+            processing power and time. The whole process would
+            take approximately 5 seconds to return a result to the client. Keep in mind we’re talking about 1 item, a
+            contact from a contact book. After a while, a new requirement is added. Solution must support companies that
+            manage their contacts organized in files. We agreed to develop a web application that would support upload
+            of dataset files, like .csv. The new web application should support third party integrations. Some of them
+            are the ESP/CRM services, like Mailchimp. User does not need to see the result immediately. System can later
+            notify the user about the result, when the process finishes. This information is the key that we need to
+            leverage on when developing our solution. So here’s how we did it.</p>
+        <div class="lg:w-[60%] m-auto px-10">
+            <h2 class="text-[45px] font-bold ">Initial approach</h2>
+            <p class="text-gray-500 m-auto py-10">Our initial approach went like this: The web application would read a
+                .csv file line-by-line and submit
+                an array of entries to the backend REST API. Processing is in real time, immediately after the user
+                makes a request for the process to start, he expects a result. Another approach is to apply vertical
+                scaling to AWS architecture. Meaning we used larger, more expensive instances that have more RAM and
+                processing power. This system worked well for smaller datasets, maybe up to 5k entries, but for larger
+                datasets multiple problems arose. This solution is prone to failure due to long request time. Also,
+                because of some 3rd party services that aren’t optimized for large scale loads or they don’t have batch
+                endpoints. 3rd party services also tend to protect their architecture from making a huge bill on their
+                end. The whole process was done in real-time. The request can take a lot of time hanging in there while
+                the backend would do all the work and return the result to the client. The request was limited to 300
+                seconds (at time of writing the article) before AWS would cancel it… Also I need to mention that the
+                user has to wait a few minutes to see the results. They can’t use the app during the process, which
+                makes for a bad user experience.</p>
+        </div>
+
+        <div class="flex justify-around mb-10 mt-5 lg:mb-3">
+            <div class="flex gap-5">
+                <img src="./img/Rectangle 45.png" alt="">
+                <div class="">
+                    <div class="flex items-baseline gap-[10px]">
+                        <img src="./img/Frame 1171275082.png" alt=""> <span class="hidden lg:block text-[18px] font-bold">Share this
+                            article</span>
+                    </div>
+                    <p class="text-gray-500 text-[18px] py-2">Written by</p>
+                    <p class="text-[22px] font-bold py-1">Renee Wells</p>
+                    <p class="text-gray-500 text-[18px] py-1">Product Designer, Quotient</p>
+                    
+                </div>
+            </div>
+           
+
+        </div>
+        <div class="px-3 lg:ml-[670px] lg:w-[480px] lg:mt-[-40px] mb-32"><p>Skilled in React Native, iOS and backend, Toni has a demonstrated  knowledge of the
+            information
+            technology and services industry, with plenty of hands-on experience to back it up.</p></div>
+    </main>
+    <footer class="bg-[#1D1E25] lg:px-[10%] py-20 ">
+        <div class="lg:flex items-center justify-between lg:px-5 px-[7%]">
+            <div>
+                <h2 class="lg:text-[40px] text-[#FFFFFF] text-[30px] font-semibold lg:w-[60%]">Think beyond the wave
+                </h2>
+
+                <p class="text-[#7E8492] text-[15px] lg:w-[55%] py-4 flex items-start"><img src="./img/Line 69 (1).png"
+                        alt="" class="lg:hidden block lg:mr-5 mr-3 pt-3 lg:w-[30%] w-8">Ask about Sans products,
+                    pricing, implementation,
+                    or anything else. Our highly trained reps are standing by, ready to help</p>
+            </div>
+            <button
+                class="text-[#1D1E25] bg-white font-semibold p-3 border rounded-3xl lg:px-10 px-5 mx-[10%] lg:mx-[0]">
+                Try for free
+            </button>
+        </div>
+        <div class=" flex justify-between my-[5%] mt-[10%] text-white">
+            <div class="lg:w-[30%] w-[80%] font-medium px-[7%]">
+                <img src="./img/Logo (15).png" alt="">
+                <p class="pt-5 text-[#7E8492] pr-5 lg:pr-0">We built an elegant solution. Our team created a fully
+                    integrated sales and marketing solution for SMBs
+                </p>
+            </div>
+            <div class="hidden lg:flex gap-[70px]">
+                <div>
+                    <h2 class="font-semibold text-[18px] pb-5">Company</h2>
+                    <p class="py-2 text-[#7E8492]">About</p>
+                    <p class="py-2 text-[#7E8492]">Pricing</p>
+                    <p class="py-2 text-[#7E8492]">Jobs</p>
+                    <p class="py-2 text-[#7E8492]">Blog</p>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-[18px] pb-5">Product</h2>
+                    <p class="py-2 text-[#7E8492]">Sales Software</p>
+                    <p class="py-2 text-[#7E8492]">Marketplace</p>
+                    <p class="py-2 text-[#7E8492]">Terms & Conditions</p>
+                    <p class="py-2 text-[#7E8492]">Privacy Policy</p>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-[18px] pb-5">Discover</h2>
+                    <p class="py-2 text-[#7E8492]">CRM Comparision</p>
+                    <p class="py-2 text-[#7E8492]">Partner Program</p>
+                    <p class="py-2 text-[#7E8492]">What is CRM</p>
+                    <p class="py-2 text-[#7E8492]">Resource</p>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-[18px] pb-5">Help Center</h2>
+                    <p class="py-2">Community</p>
+                    <p class="py-2">Knowledge Base</p>
+                    <p class="py-2">Academy</p>
+                    <p class="py-2">Support</p>
+                </div>
+            </div>
+        </div>
+        <div class="border-t-2 border-[#CED1D8] pt-16 lg:pt-0 text-[#FFFFFF] lg:flex justify-between">
+            <div class="flex flex-wrap lg:flex-row items-center gap-[30px] justify-center">
+                <img src="./img/Social media.png" alt="" class="lg:mr-10 mx-40 lg:mx-0">
+                <p>Privacy Policy</p>
+                <p>Terms & Conditions</p>
+                <p>Support</p>
+            </div>
+            <p class="py-10 text-center mx-16 text-[#AFB3BB]">© Copyright 2023 All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

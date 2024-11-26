@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog</title>
     <link href="./output.css" rel="stylesheet">
 </head>
 
@@ -31,17 +31,17 @@
         </div>
     </header>
     <section>
-        <div class=" flex  text-[16px] gap-16 mt-20 lg:ml-32 ">
+        <div class=" flex  ml-5 lg:flex-row text-[16px] gap-16 mt-20 lg:ml-32 ">
             <p class="text-black font-bold text-[16px] border-b-2 pb-1 border-black">View all</p>
             <p class=" text-gray-500">Design</p>
             <p class=" text-gray-500">Articles</p>
             <p class=" text-gray-500">Product</p>
-            <p class="text-gray-500">Software Development</p>
-            <p class="text-gray-500">Customer Success</p>
+            <p class="hidden lg:block text-gray-500">Software Development</p>
+            <p class=" hidden lg:block text-gray-500">Customer Success</p>
         </div>
-        <div class="my-10 mt-16 ml-36">
-            <div class="flex justify-center items-center gap-8 mt-10 relative">
-                <div class="w-[110%]">
+        <div class="my-10 mt-16 lg:ml-36">
+            <div class="flex flex-col lg:flex-row justify-center items-center gap-8 mt-10 relative">
+                <div class="lg:w-[110%]">
                     <img src="img/Image (41).png" alt="">
                     <div class="p-2">
                         <p class="text-sm text-[#7E8492] flex justify-between pb-5">Published in Insight Jan 30,
@@ -53,8 +53,8 @@
                     </div>
                 </div>
 
-                <img src="./img/Group 3260.png" alt="" class="absolute top-[200px] left-[480px]">
-                <div class="w-[110%]">
+                <img src="./img/Group 3260.png" alt="" class="hidden lg:block absolute top-[200px] left-[480px]">
+                <div class="lg:w-[110%]">
                     <img src="img/Image (42).png" alt="">
                     <div class="p-2">
                         <p class="text-sm text-[#7E8492] flex justify-between pb-5">Published in Insight Jan 30,
@@ -66,55 +66,187 @@
                         </div>
                     </div>
                     <div class=" w-[60%] mt-8">
-                            <img src="img/Image (43).png" alt="">
+                            <img src="img/Image (43).png" alt="" class="hidden lg:block">
                         <div class="p-2">
-                            <p class="text-sm text-[#7E8492] flex justify-between pb-5">Published in Insight Jan 30,
+                            <p class="hidden lg:block text-sm text-[#7E8492] flex justify-between pb-5">Published in Insight Jan 30,
                                 2021
 
                             </p>
-                            <h3 class="text-3xl font-semibold mt-2">Using Grid in website design</h3>
-                            <p class="text-gray-500">Andi: "What's the grid like?" Toni: “Like below…”</p>
+                            <h3 class="hidden lg:block text-3xl font-semibold mt-2">Using Grid in website design</h3>
+                            <p class="hidden lg:block text-gray-500">Andi: "What's the grid like?" Toni: “Like below…”</p>
                         </div>
                     </div>
                 </div>
             </div>
     </section>
-    <section class="bg-black px-36 py-20">
-        <div class=" flex gap-10">
+    <section class="bg-black px-10 lg:px-36 py-20">
+        <div class=" flex flex-col lg:flex-row gap-10">
             <div class="lg:w-[50%] m-auto">
                 <img src="./img/Rectangle 34.png" alt="" class="w-full">
                 <h2 class="text-white text-[40px] ">How we perform long-running tasks using AWS services</h2>
-                <p class="text-[#7E8492] text-[18px] mt-3">Webflow is web design tool as well as a hosting platform and CMS all in one. While
+                <p class="text-[#7E8492] text-[18px] mt-3">Webflow is web design tool as well as a hosting platform and
+                    CMS all in one. While
                     you are probably
                     familiar with all of these, they are usually entirely separate tools.</p>
             </div>
             <div class="lg:w-[50%]">
                 <img src="./img/Rectangle 35.png" alt="" class="w-full">
                 <h2 class="text-white text-[40px] underline">How to ask when doing User Research</h2>
-                <p class="text-[#7E8492] text-[18px] mt-3">Bro, the story is that you want to make an application for buying and selling
+                <p class="text-[#7E8492] text-[18px] mt-3">Bro, the story is that you want to make an application for
+                    buying and selling
                     goods on the market. During user research, what do you think you will ask people?</p>
             </div>
         </div>
-        <div class=" flex gap-10 mt-36">
+        <div class=" flex flex-col lg:flex-row gap-10 mt-36">
 
             <div class="lg:w-[50%] ">
                 <img src="./img/Rectangle 37.png" alt="" class="w-full">
                 <h2 class="text-white text-[40px]">Layout Exploration — Simple exercise but big effect</h2>
-                <p class="text-[#7E8492] text-[18px] mt-3">Make alternatives or other options for the design we are making.
+                <p class="text-[#7E8492] text-[18px] mt-3">Make alternatives or other options for the design we are
+                    making.
                     For example, we are creating a website design. Then there is the testimonial section.</p>
             </div>
-            <div class="lg:w-[50%] m-auto mt-[-250px]">
+            <div class="lg:w-[50%] m-auto lg:mt-[-250px]">
                 <img src="./img/Rectangle 36.png" alt="" class="w-full">
                 <h2 class="text-white text-[40px]">Webflow Break the Coding Barrier</h2>
-                <p class="text-[#7E8492] text-[18px] mt-3">Webflow is web design tool as well as a hosting platform and CMS all in one. While
+                <p class="text-[#7E8492] text-[18px] mt-3">Webflow is web design tool as well as a hosting platform and
+                    CMS all in one. While
                     you are probably familiar with all of these, they are usually entirely separate tools.</p>
             </div>
         </div>
-
     </section>
-
-
-
+    <section>
+        <div class="flex flex-col lg:flex-row lg:justify-around mt-24 pb-20">
+            <div>
+                <p class="text-[40px] font-bold mb-3">Articles</p>
+                <p class="text-gray-500 text-[18px]">Complex tech decoded by engineers, business <br> trends analyzed by experts.</p>
+            </div>
+              <div class=" hidden lg:flex  lg:flex-row lg:items-center  lg:gap-5">
+                <img src="./img/Frame 1171275052.png" alt="">
+                <img src="./img/Frame 1171275053.png" alt="">
+              </div>
+        </div>
+        <div class="py-10">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div class="bg-white shadow-md  overflow-hidden">
+                <img
+                  src="./img/Image (44).png"
+                  alt="UX Designer Portfolio"
+                  class="w-full object-cover"
+                />
+                <div class="p-6">
+                  <h2 class="text-lg font-semibold mb-4">
+                    List of UX Designer Portfolio / Case Studies where you can make money
+                  </h2>
+                  <p class="text-gray-600 mb-6">
+                    Here are some portfolios / Case Studies from UX Designers that you can use as a reference for creating a portfolio. Two interesting things from their portfolio are:
+                  </p>
+                  <a href="blog_details.html">
+                  <button class="text-black px-4 py-2 rounded-3xl border-2 border-gray-200 hover:bg-blue-700 hover:text-white">
+                    Read More
+                  </button>
+                </a>
+                </div>
+              </div>
+              <div class="bg-white shadow-md  overflow-hidden">
+                <img
+                  src="./img/Image (45).png"
+                  alt="Designing Career"
+                  class="w-full  object-cover"
+                />
+                <div class="p-6">
+                  <h2 class="text-lg font-semibold mb-4">
+                    Skyrocketing in The Designing Career, Why Not?
+                  </h2>
+                  <p class="text-gray-600 mb-6">
+                    Ever thought of jumping into the world of design as a career? If not, you may want to look at what the word ‘design’ actually means.
+                  </p>
+                  <a href="blog_details.html">
+                  <button class="text-black px-4 py-2 rounded-3xl border-2 border-gray-200 hover:bg-blue-700 hover:text-white">
+                    Read More
+                  </button></a>
+                </div>
+              </div>
+              <div class="bg-white shadow-md  overflow-hidden">
+                <img
+                  src="./img/Image (46).png"
+                  alt="UI Design Elements"
+                  class="w-full  object-cover"
+                />
+                <div class="p-6">
+                  <h2 class="text-lg font-semibold mb-4">
+                    Elements that may be missed when designing the UI
+                  </h2>
+                  <p class="text-gray-600 mb-6">
+                    This is an article that talks about the little elements that are often overlooked when designing UI.
+                  </p>
+                  <a href="blog_details.html">
+                  <button class=" text-black px-4 py-2 rounded-3xl border-2 border-gray-200 hover:bg-blue-700 hover:text-white">
+                    Read More
+                  </button>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>          
+    </section>
+    <section class="lg:flex lg:px-24 px-10 justify-between items-center my-24">
+        <div class="w-full lg:w-[60%] ">
+            <h2 class="lg:text-[60px] text-[30px] font-semibold">Think beyond the wave</h2>
+            <p class="flex items-start lg:text-[25px] text-[15px] font-semibold pt-10 pr-[40px]">
+                <img src="./img/Line 69.png" alt="" class="mr-2 lg:pt-5 pt-3 w-[30px] lg:w-96">Ask about Sans products, pricing,
+                implementation, or anything else. Our highly trained reps are standing by, ready to help
+            </p>
+        </div>
+        <div class="pt-10 pl-10">
+            <button class="bg-[#1D1E25] text-white font-semibold p-3 border rounded-3xl px-10">
+                Try for free
+            </button>
+        </div>
+    </section>
+    <footer>
+        <div class="lg:px-28 px-10 flex justify-between my-[5%] mt-[15%]">
+            <div class="lg:w-[25%] w-[80%] font-medium">
+                <img src="./img/Logo.png" alt="">
+                <p class="pt-5">We built an elegant solution. Our team created a fully integrated sales and marketing solution for SMBs
+                </p>
+            </div>
+            <div class="hidden lg:flex gap-[74px]">
+                <div>
+                    <h2 class="font-semibold text-[18px] pb-5">Company</h2>
+                    <p class="py-2">About</p>
+                    <p class="py-2">Pricing</p>
+                    <p class="py-2">Jobs</p>
+                    <p class="py-2">Blog</p>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-[18px] pb-5">Product</h2>
+                    <p class="py-2">Sales Software</p>
+                    <p class="py-2">Marketplace</p>
+                    <p class="py-2">Terms & Conditions</p>
+                    <p class="py-2">Privacy Policy</p>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-[18px] pb-5">Discover</h2>
+                    <p class="py-2">CRM Comparision</p>
+                    <p class="py-2">Partner Program</p>
+                    <p class="py-2">What is CRM</p>
+                    <p class="py-2">Resource</p>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-[18px] pb-5">Help Center</h2>
+                    <p class="py-2">Community</p>
+                    <p class="py-2">Knowledge Base</p>
+                    <p class="py-2">Academy</p>
+                    <p class="py-2">Support</p>
+                </div>
+            </div>
+        </div>
+        <div class="border-t-2 border-[#CED1D8] pt-16 lg:pt-0">
+            <img src="./img/Content.png" alt="" class="lg:hidden block w-[90%] m-auto">
+        <p class="py-10 text-center mx-16 text-[#AFB3BB]">© Copyright 2023 All Rights Reserved</p>
+        </div>
+    </footer>  
 </body>
 
 </html>
