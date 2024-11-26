@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link href="./output.css" rel="stylesheet">
 </head>
 
@@ -194,23 +194,23 @@
         </section>
 
         <section class="my-20 mt-32">
-            <h2 class="lg:text-[50px] font-semibold text-center">Trending news from Coca</h2>
-            <p class="text-[#7E8492] text-[15px] text-center py-4">We have some new services to pamper you</p>
+            <h2 class="lg:text-[50px] text-[30px] font-semibold text-center">Trending news from Coca</h2>
+            <p class="text-[#7E8492] lg:text-[15px] text-[17px] text-center py-4">We have some new services to pamper you</p>
 
-            <div class="lg:flex justify-center items-center gap-8 mt-10 relative">
-                <div class="lg:w-[40%] ">
+            <div class="flex lg:flex-row flex-col justify-center items-center gap-8 mt-10 relative">
+                <div class="lg:w-[40%] w-[90%]">
                     <img src="img/Rectangle 5650.png" alt="">
                     <div class="p-2">
                         <p class="text-sm text-[#7E8492] flex justify-between pb-5">Published in Insight Jan 30, 2021
                             <span>by: Albert Sans</span>
                         </p>
-                        <h3 class="text-3xl font-semibold mt-2">What makes an authentic employee profile, and why does
+                        <h3 class="lg:text-3xl text-xl font-semibold mt-2">What makes an authentic employee profile, and why does
                             it matter ?</h3>
                     </div>
                 </div>
 
-                <img src="./img/Group 3260.png" alt="" class="absolute top-[120px]">
-                <div class="w-[40%]">
+                <img src="./img/Group 3260.png" alt="" class="absolute top-[120px] hidden lg:block">
+                <div class="lg:w-[40%] hidden lg:block">
                     <img src="img/Rectangle 5651.png" alt="">
                     <div class="p-2">
                         <p class="text-sm text-[#7E8492] flex justify-between pb-5">Published in Insight Jan 30, 2021
@@ -224,15 +224,15 @@
 
         </section>
 
-        <section class="my-32 px-32">
-            <div class="flex justify-between items-center">
-                <h2 class="text-[50px] font-semibold w-[45%]">What our customer are saying</h2>
-                <p class="text-[#7E8492] text-[15px] py-10 w-[28%]">We are trusted numerous companies from different
+        <section class="my-32 lg:px-32 px-10">
+            <div class="flex lg:flex-row flex-col lg:justify-between lg:items-center items-start">
+                <h2 class="lg:text-[50px] text-[30px] font-semibold lg:w-[45%] w-[80%]">What our customer are saying</h2>
+                <p class="text-[#7E8492] text-[15px] py-10 lg:w-[28%] w-[60%]">We are trusted numerous companies from different
                     business to meet their needs</p>
             </div>
-            <div class="pl-[10%] p-[5%]">
+            <div class="lg:pl-[10%] p-[5%]">
                 <img src="img/./Rating.png" alt="">
-                <h3 class="font-semibold text-[35px] pr-[10%] pt-10">“With Agency the results are very satisfying.
+                <h3 class="font-semibold lg:text-[35px] text-[22px] lg:pr-[10%] pt-10">“With Agency the results are very satisfying.
                     wrapped with Hight quality and innovative design that
                     makes a surge of visitors on my website”</h3>
                 <div class="flex items-center justify-between pt-20">
@@ -249,11 +249,11 @@
         </section>
 
 
-        <section class="flex px-24 justify-between items-center my-24">
+        <section class="lg:flex lg:px-24 px-10 justify-between items-center my-24">
             <div class="w-full lg:w-[60%] ">
-                <h2 class="lg:text-[60px] font-semibold">Think beyond the wave</h2>
-                <p class="flex items-start lg:text-[25px] font-semibold pt-10 pr-[40px]">
-                    <img src="./img/Line 69.png" alt="" class="mr-2 pt-5">Ask about Sans products, pricing,
+                <h2 class="lg:text-[60px] text-[30px] font-semibold">Think beyond the wave</h2>
+                <p class="flex items-start lg:text-[25px] text-[15px] font-semibold pt-10 pr-[40px]">
+                    <img src="./img/Line 69.png" alt="" class="mr-2 lg:pt-5 pt-3 w-[30px] lg:w-96">Ask about Sans products, pricing,
                     implementation, or anything else. Our highly trained reps are standing by, ready to help
                 </p>
             </div>
@@ -266,13 +266,13 @@
     </main>
 
     <footer>
-        <div class="px-28 flex justify-between my-[5%] mt-[15%]">
-            <div class="w-[25%] font-medium">
+        <div class="lg:px-28 px-10 flex justify-between my-[5%] mt-[15%]">
+            <div class="lg:w-[25%] w-[80%] font-medium">
                 <img src="./img/Logo.png" alt="">
                 <p class="pt-5">We built an elegant solution. Our team created a fully integrated sales and marketing solution for SMBs
                 </p>
             </div>
-            <div class="flex gap-[74px]">
+            <div class="hidden lg:flex gap-[74px]">
                 <div>
                     <h2 class="font-semibold text-[18px] pb-5">Company</h2>
                     <p class="py-2">About</p>
@@ -303,7 +303,10 @@
                 </div>
             </div>
         </div>
-        <p class="py-10 text-center border-t-2 border-[#CED1D8] mx-16 text-[#AFB3BB]">© Copyright 2023 All Rights Reserved</p>
+        <div class="border-t-2 border-[#CED1D8] pt-16 lg:pt-0">
+            <img src="./img/Content.png" alt="" class="lg:hidden block w-[90%] m-auto">
+        <p class="py-10 text-center mx-16 text-[#AFB3BB]">© Copyright 2023 All Rights Reserved</p>
+        </div>
     </footer>
 </body>
 
